@@ -1,4 +1,7 @@
 # This is a placeholder class.
-class template {
-  anchor { 'Hello_World': }
+class nocturne {
+  package { 'Nocturne':
+    provider => 'compressed_app',
+    source   => 'https://github.com/downloads/InBeta/nocturne/Nocturne.zip'
+  }
 }
