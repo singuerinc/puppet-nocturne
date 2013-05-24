@@ -3,8 +3,9 @@ require 'spec_helper'
 # Check other boxen modules for examples
 # or read http://rspec-puppet.com/tutorial/
 describe 'nocturne' do
-	should contain_package('Nocturne').with({
-	   :provider => 'compressed_app',
-	   :source   => 'https://github.com/downloads/InBeta/nocturne/Nocturne.zip'
-	})
+    should contain_package('Nocturne').with({
+       :ensure   => 'installed',
+       :provider => 'compressed_app',
+       :source   => 'https://github.com/downloads/InBeta/nocturne/Nocturne.zip'
+    })
 end
